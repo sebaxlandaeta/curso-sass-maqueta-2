@@ -1,0 +1,56 @@
+main section:nth-child(2) {
+  width: 100%;
+  height: 100vh;
+}
+main section:nth-child(2) > div:first-child {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+main section:nth-child(2) > div:last-child {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.food-menu {
+  width: 100%;
+  height: 50vh;
+  padding: 2rem;
+  display: flex;
+}
+.food-menu > div {
+  width: 50%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+}
+.food-menu > div > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.food-menu > div:first-child {
+  justify-content: end;
+  align-items: center;
+}
+
+.food-menu > div:last-child {
+  flex-direction: column;
+  justify-content: center;
+}
+.food-menu > div:last-child > span:first-child {
+  margin: 2rem 0 0.5rem 0;
+  color: gray;
+}
+.food-menu > div:last-child > span:first-child + span {
+  font-size: 1.5rem;
+}
+.food-menu > div:last-child > span:first-child + span + p {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+/*# sourceMappingURL=banner2.css.map */
