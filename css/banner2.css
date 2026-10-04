@@ -1,56 +1,83 @@
-main section:nth-child(2) {
+@charset "UTF-8";
+/* ==========================================
+ * BANNER 2: FOOD MENU SECTION (.sass)
+ * ========================================== */
+main > section:nth-child(2) {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-main section:nth-child(2) > div:first-child {
+main > section:nth-child(2) > div {
   width: 100%;
-  height: 50%;
   display: flex;
 }
-main section:nth-child(2) > div:last-child {
-  width: 100%;
-  height: 50%;
-  display: flex;
+@media (max-width: 768px) {
+  main > section:nth-child(2) > div {
+    flex-direction: column;
+  }
 }
 
 .food-menu {
-  width: 100%;
-  height: 50vh;
-  padding: 2rem;
+  width: 50%;
+  padding: 1.5rem;
   display: flex;
 }
 .food-menu > div {
   width: 50%;
-  height: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
 }
 .food-menu > div > img {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
 }
-
 .food-menu > div:first-child {
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
-
 .food-menu > div:last-child {
   flex-direction: column;
   justify-content: center;
 }
 .food-menu > div:last-child > span:first-child {
-  margin: 2rem 0 0.5rem 0;
+  margin: 0.5rem 0;
   color: gray;
+  font-weight: 600;
 }
 .food-menu > div:last-child > span:first-child + span {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  color: rgb(44, 170, 179);
 }
 .food-menu > div:last-child > span:first-child + span + p {
   font-size: 0.9rem;
   color: gray;
+  line-height: 1.4;
+}
+.food-menu {
+  /* Adaptación Responsive para Móviles */
+}
+@media (max-width: 768px) {
+  .food-menu {
+    width: 100%;
+    padding: 1rem 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  .food-menu > div {
+    width: 100%;
+  }
+  .food-menu > div:first-child {
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+  .food-menu > div:last-child {
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=banner2.css.map */
